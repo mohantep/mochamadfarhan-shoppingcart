@@ -12,3 +12,15 @@ Iya
 
 Tidak
 >Maka memilih barang
+---------------------------
+Mulai
+array cart
+push item to cart
+push item to cart
+push item to cart
+
+fungsi checkout
+
+numeric total 
+for barang_yang_dipilih in cart
+    total += barang_yang_dipilih.harga
