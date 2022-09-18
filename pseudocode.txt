@@ -1,0 +1,50 @@
+MEMULAI PROGRAM
+Memilih produk untuk dimasukan dalam keranjang.
+Jika sudah tidak menambah barang
+Iya
+>Maka akan melakukan checkout
+>>Melakukan pembayaran
+>>_ Apakah melakukan pembayaran online?
+>>_ Iya no resi dibuat
+>>_ Barang dikirim
+>>_ Barang sampai
+>>_ Finish
+
+Tidak
+>Maka memilih barang
+---------------------------
+BEGIN
+
+array keranjang
+double total_pembayaran
+string jenis_pembayaran
+
+fungsi tambah_barang()
+    push barang ke keranjang
+    display barang_yang_dalam_keranjang
+
+fungsi checkout()
+    for barang in keranjang
+        jml = harga_barang * qty
+        total_pembayaran += jml
+    endfor
+
+    display total_pembayaran
+
+fungsi bayar_noncod()
+    display resi_pembelian
+    proses pembayaran online
+    barang_dikirim
+
+fungsi bayar_cod()
+    display resi_pembelian
+    barang_dikirim
+
+fungsi barang_diterima()
+    if jenis_pembayaran == 'non'
+        return barang_diterima
+    
+    if jenis_pembayaran == 'cod' && sudah_dibayar
+        return barang_diterima
+    
+    return menunggu_pembayaran
