@@ -1,1 +1,14 @@
-Ini mencoba untuk garis pseudocode
+MEMULAI PROGRAM
+Memilih produk untuk dimasukan dalam keranjang.
+Jika sudah tidak menambah barang
+Iya
+>Maka akan melakukan checkout
+>>Melakukan pembayaran
+>>_ Apakah melakukan pembayaran online?
+>>_ Iya no resi dibuat
+>>_ Barang dikirim
+>>_ Barang sampai
+>>_ Finish
+
+Tidak
+>Maka memilih barang
